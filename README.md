@@ -3,7 +3,7 @@ A Xray backend framework that can easily support many panels.
 
 一个基于Xray的后端框架，支持V2ay,Trojan,Shadowsocks协议，极易扩展，支持多面板对接
 
-Find the source code here: [Misaka-blog/XrayR](https://github.com/Misaka-blog/XrayR)
+Find the source code here: [Misaka-blog/XrayR](https://github.com/haibinml/XrayR)
 
 如对脚本不放心，可使用此沙箱先测一遍再使用：https://killercoda.com/playgrounds/scenario/ubuntu
 
@@ -14,7 +14,7 @@ Find the source code here: [Misaka-blog/XrayR](https://github.com/Misaka-blog/Xr
 # 一键安装
 
 ```
-wget -N https://raw.githubusercontents.com/Misaka-blog/XrayR-script/master/install.sh && bash install.sh
+wget -N https://raw.githubusercontents.com/haibinml/XrayR-script/master/install.sh && bash install.sh
 ```
 
 # Docker 安装
@@ -51,11 +51,11 @@ ConnetionConfig:
   BufferSize: 64 # The internal cache size of each connection, kB 
 Nodes:
   -
-    PanelType: "SSpanel" # Panel type: SSpanel, V2board, PMpanel
+    PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel
     ApiConfig:
       ApiHost: "http://127.0.0.1:667"
       ApiKey: "123"
-      NodeID: 41
+      NodeID: 1
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
